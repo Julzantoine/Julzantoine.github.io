@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LayerPitch — Musique interactive pour vos pitchs de jeu vidéo</title>
 <meta name="description" content="Un MP3 dit comment votre musique sonne. LayerPitch montre comment elle marche. Créez un AdReel : votre système musical, manipulable en direct par le studio qui vous lit.">
+<meta name="google-site-verification" content="asmoDiQgqSSZdCIJshXwRicbE9wsdtSAWed4oKUukRU" />
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
   :root {
@@ -51,6 +52,11 @@
   .nav-lang { font-family: var(--font-mono); font-size: 12px; color: var(--text-dimmer); }
   .nav-lang a { color: var(--text-dim); }
   .nav-lang a.active { color: var(--text); font-weight: 600; }
+  /* Branchement Studio/Fan (7 septembre) : réserve la place dans la nav pour les deux futures
+     landings dédiées (chantier "bascule bêta fermée -> lancement public", architecture actée le
+     même jour -- Compositeurs reste à la racine, Studio/Fan en pages sœurs). Grisé/non cliquable
+     tant que leur contenu n'est pas construit -- pas de lien vers une page vide. */
+  .nav-persona-teaser { font-family: var(--font-mono); font-size: 11px; color: var(--text-dimmer); opacity: 0.6; cursor: default; user-select: none; }
 
   /* ---- Hero ---- */
   .hero {
@@ -159,6 +165,7 @@
   <span class="nav-logo">LayerPitch</span>
   <div class="nav-right">
     <span class="nav-lang"><a class="active" href="./index.html">FR</a> / <a href="./en.html">EN</a></span>
+    <span class="nav-persona-teaser" title="Bientôt disponible">Studio · Fan — bientôt</span>
     <!-- TODO une fois hébergé sur son propre domaine : garder cette URL absolue (l'app vit sur un
          domaine différent de la landing, voir docs/infrastructure.md, 6 septembre). -->
     <a class="nav-account" href="https://beta.layerpitch.com/bienvenue.html">Se connecter / Créer un compte</a>
